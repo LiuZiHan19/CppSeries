@@ -1,10 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\CppProject\\HelloWorld\\",
+  "WorkspaceRootPath": "D:\\CppSeries\\HelloWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{23DB095C-BBF4-4EA1-BE90-0F7B052C97D8}|HelloWorld\\HelloWorld.vcxproj|D:\\CppProject\\HelloWorld\\HelloWorld\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{23DB095C-BBF4-4EA1-BE90-0F7B052C97D8}|HelloWorld\\HelloWorld.vcxproj|D:\\CppSeries\\HelloWorld\\HelloWorld\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{23DB095C-BBF4-4EA1-BE90-0F7B052C97D8}|HelloWorld\\HelloWorld.vcxproj|solutionrelative:HelloWorld\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23DB095C-BBF4-4EA1-BE90-0F7B052C97D8}|HelloWorld\\HelloWorld.vcxproj|D:\\CppSeries\\HelloWorld\\HelloWorld\\Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23DB095C-BBF4-4EA1-BE90-0F7B052C97D8}|HelloWorld\\HelloWorld.vcxproj|solutionrelative:HelloWorld\\Log.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23DB095C-BBF4-4EA1-BE90-0F7B052C97D8}|HelloWorld\\HelloWorld.vcxproj|D:\\CppSeries\\HelloWorld\\HelloWorld\\Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{23DB095C-BBF4-4EA1-BE90-0F7B052C97D8}|HelloWorld\\HelloWorld.vcxproj|solutionrelative:HelloWorld\\Log.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +22,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Log.cpp",
+              "DocumentMoniker": "D:\\CppSeries\\HelloWorld\\HelloWorld\\Log.cpp",
+              "RelativeDocumentMoniker": "HelloWorld\\Log.cpp",
+              "ToolTip": "D:\\CppSeries\\HelloWorld\\HelloWorld\\Log.cpp",
+              "RelativeToolTip": "HelloWorld\\Log.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-12-15T03:49:19.087Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Log.h",
+              "DocumentMoniker": "D:\\CppSeries\\HelloWorld\\HelloWorld\\Log.h",
+              "RelativeDocumentMoniker": "HelloWorld\\Log.h",
+              "ToolTip": "D:\\CppSeries\\HelloWorld\\HelloWorld\\Log.h",
+              "RelativeToolTip": "HelloWorld\\Log.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-12-15T11:56:31.111Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Main.cpp",
-              "DocumentMoniker": "D:\\CppProject\\HelloWorld\\HelloWorld\\Main.cpp",
+              "DocumentMoniker": "D:\\CppSeries\\HelloWorld\\HelloWorld\\Main.cpp",
               "RelativeDocumentMoniker": "HelloWorld\\Main.cpp",
-              "ToolTip": "D:\\CppProject\\HelloWorld\\HelloWorld\\Main.cpp",
+              "ToolTip": "D:\\CppSeries\\HelloWorld\\HelloWorld\\Main.cpp",
               "RelativeToolTip": "HelloWorld\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-14T03:52:05.737Z",
               "EditorCaption": ""
