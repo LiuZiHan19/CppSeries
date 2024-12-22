@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Log.h"
 
 enum LogLevel
 {
@@ -44,10 +43,37 @@ public:
 	}
 };
 
+class PureVirtual
+{
+	virtual void DoSomething() = 0;
+};
+
+class Entity : public PureVirtual
+{
+public:
+	virtual void Move() {};
+
+	// Inherited via PureVirtual
+	void DoSomething() override
+	{
+		std::cout << "Doing something" << std::endl;
+	}
+};
+
+class Player : public Entity
+{
+public:
+	void Move() override
+	{
+		std::cout << "Player moving" << std::endl;
+	}
+};
+
 int main()
 {
-	Logger logger;
+	Player player;
+	player.Move();
+	player.DoSomething();
 
 	std::cin.get();
 }
-
