@@ -1,51 +1,44 @@
-# Ignore build output directories
-[Dd]ebug/
-[Dd]ebugPublic/
-[Dd]ist/
-[Dd]eploy/
-[Rr]elease/
-[Rr]eleasePublic/
+# Visual Studio generated files
+.vs/
+*.user
+*.suo
+*.ipch
+*.VC.db
+*.VC.VC.opendb
 
-# Ignore temporary files
+# Build output directories
+Debug/
+Release/
+x64/Debug/
+x64/Release/
+
+# Build artifacts
 *.obj
 *.pdb
 *.idb
-*.lib
-*.dll
+*.ilk
+*.log
+*.tlog
+*.lastbuildstate
+*.pch
+*.tmp
+
+# Binary files
 *.exe
+*.dll
+*.lib
 *.out
 *.app
-*.gch
-*.pch
-*.sdf
-*.db
-*.vsconfig
 
-# User-specific files
-*.user
-*.userosscache
-*.suo
-*.userprefs
+# Temporary files
+*.bak
+*.cache
+*.ncb
 
-# Ignore VS files
-.vs/
-.vscode/
-
-# Ignore NuGet packages
-packages/
-
-# Ignore build system files
-*.sln.docstate
-
-# Ignore Visual Studio specific files
-.vs2019/
-.vs2017/
-
-# CMake files (if you use CMake)
+# CMake files (if applicable)
 CMakeCache.txt
 CMakeFiles/
 
-# Ignore other temp files and logs
-*.log
-*.bak
-*.tmp
+# Ignore the default backup and hidden system files
+.DS_Store
+Thumbs.db
