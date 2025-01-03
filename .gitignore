@@ -1,32 +1,51 @@
-# Prerequisites
-*.d
+# Ignore build output directories
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ist/
+[Dd]eploy/
+[Rr]elease/
+[Rr]eleasePublic/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# Ignore temporary files
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+*.pdb
+*.idb
 *.lib
-
-# Executables
+*.dll
 *.exe
 *.out
 *.app
+*.gch
+*.pch
+*.sdf
+*.db
+*.vsconfig
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Ignore VS files
+.vs/
+.vscode/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore build system files
+*.sln.docstate
+
+# Ignore Visual Studio specific files
+.vs2019/
+.vs2017/
+
+# CMake files (if you use CMake)
+CMakeCache.txt
+CMakeFiles/
+
+# Ignore other temp files and logs
+*.log
+*.bak
+*.tmp
