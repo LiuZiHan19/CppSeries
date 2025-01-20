@@ -13,13 +13,31 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Simple">
+      <UniqueIdentifier>{e1b2ceb3-2bcb-49c6-b9b1-4a168ad2e584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Medium">
+      <UniqueIdentifier>{e00a7764-2985-4098-b032-a1e36d82ab2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Hard">
+      <UniqueIdentifier>{7743fef6-549c-4a00-840a-1819b2c40118}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MergeTwoSortedArray.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="remove_element.cpp">
+      <Filter>Source Files\Simple</Filter>
+    </ClCompile>
+    <ClCompile Include="merge_sorted_array.cpp">
+      <Filter>Source Files\Simple</Filter>
+    </ClCompile>
+    <ClCompile Include="remove_duplicates.cpp">
+      <Filter>Source Files\Simple</Filter>
+    </ClCompile>
+    <ClCompile Include="remove_duplicate_no_extra_memory_space.cpp">
+      <Filter>Source Files\Medium</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

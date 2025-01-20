@@ -19,8 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="MergeTwoSortedArray.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="merge_sorted_array.cpp" />
+    <ClCompile Include="remove_duplicate_no_extra_memory_space.cpp" />
+    <ClCompile Include="remove_duplicates.cpp" />
+    <ClCompile Include="remove_element.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
