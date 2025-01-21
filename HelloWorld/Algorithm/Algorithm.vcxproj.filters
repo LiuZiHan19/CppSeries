@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Hard">
       <UniqueIdentifier>{7743fef6-549c-4a00-840a-1819b2c40118}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Log">
+      <UniqueIdentifier>{086aca0e-1a15-4ecc-bf97-9b867062c311}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -36,8 +39,25 @@
     <ClCompile Include="remove_duplicates.cpp">
       <Filter>Source Files\Simple</Filter>
     </ClCompile>
-    <ClCompile Include="remove_duplicate_no_extra_memory_space.cpp">
+    <ClCompile Include="remove_duplicate_medium.cpp">
       <Filter>Source Files\Medium</Filter>
     </ClCompile>
+    <ClCompile Include="majority_element.cpp">
+      <Filter>Source Files\Simple</Filter>
+    </ClCompile>
+    <ClCompile Include="rotated_array.cpp">
+      <Filter>Source Files\Medium</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>Source Files\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="max_profit.cpp">
+      <Filter>Source Files\Simple</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

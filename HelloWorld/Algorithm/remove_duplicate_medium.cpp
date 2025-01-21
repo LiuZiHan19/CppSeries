@@ -1,7 +1,10 @@
 #include <iostream>
 #include <vector>
 
-int remove_duplicates_no_extra_memory_space(std::vector<int>& nums)
+/*
+  移除>2的重复项 => 不使用额外的内存空间
+*/
+int removeDuplicatesNoExtraMemorySpace(std::vector<int>& nums)
 {
 	for (size_t i = 0; i < nums.size(); i++)
 	{

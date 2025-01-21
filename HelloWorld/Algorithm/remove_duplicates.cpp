@@ -2,9 +2,9 @@
 #include <vector>
 
 /*
-  移除重复项 -> 允许使用额外的数组空间
+  移除重复项 => 允许使用额外的数组空间
 */
-int remove_duplicates(std::vector<int>& nums)
+int removeDuplicates(std::vector<int>& nums)
 {
 	std::vector<int>* duplicates = new std::vector<int>();
 	for (size_t i = 0; i < nums.size(); i++)

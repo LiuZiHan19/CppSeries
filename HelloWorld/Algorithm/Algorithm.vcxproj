@@ -19,11 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="logger.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="majority_element.cpp" />
+    <ClCompile Include="max_profit.cpp" />
     <ClCompile Include="merge_sorted_array.cpp" />
-    <ClCompile Include="remove_duplicate_no_extra_memory_space.cpp" />
+    <ClCompile Include="remove_duplicate_medium.cpp" />
     <ClCompile Include="remove_duplicates.cpp" />
     <ClCompile Include="remove_element.cpp" />
+    <ClCompile Include="rotated_array.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="logger.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
