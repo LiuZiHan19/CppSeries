@@ -10,6 +10,7 @@ int majorityElement(std::vector<int>& nums);
 int boyerMooreAlgorithm(std::vector<int>& nums);
 std::vector<int>& rotatedArrary(std::vector<int>& nums, int rotatedNumber);
 std::vector<int>& rotatedArrayMax(std::vector<int>& nums, int k);
+int maxProfit(std::vector<int>& nums);
 
 int main()
 {
@@ -68,7 +69,10 @@ int main()
 	}
 
 	{
-
+		NewLine();
+		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 7, 1, 5, 3, 6, 4 }));
+		std::shared_ptr<std::vector<int>> nums2 = std::make_shared<std::vector<int>>(std::vector<int>({ 7, 6, 4, 3,1 }));
+		maxProfit(*nums1);
 	}
 
 	return 0;
