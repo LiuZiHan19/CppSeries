@@ -19,15 +19,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="logger.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="majority_element.cpp" />
-    <ClCompile Include="max_profit.cpp" />
-    <ClCompile Include="merge_sorted_array.cpp" />
-    <ClCompile Include="remove_duplicate_medium.cpp" />
-    <ClCompile Include="remove_duplicates.cpp" />
-    <ClCompile Include="remove_element.cpp" />
-    <ClCompile Include="rotated_array.cpp" />
+    <ClCompile Include="JumpGame.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MajorityElement.cpp" />
+    <ClCompile Include="MaxProfit.cpp" />
+    <ClCompile Include="MaxProfitMedium.cpp" />
+    <ClCompile Include="MergeSortedArrary.cpp" />
+    <ClCompile Include="RemoveDuplicateMedium.cpp" />
+    <ClCompile Include="RemoveDuplicates.cpp" />
+    <ClCompile Include="RemoveElements.cpp" />
+    <ClCompile Include="RotatedArrary.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logger.h" />

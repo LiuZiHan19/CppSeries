@@ -1,6 +1,6 @@
 #pragma once
 
-void NewLine();
+void Line();
 
 void Log(const char* message);
 

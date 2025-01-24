@@ -1,12 +1,14 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 /*
   移除重复项 => 允许使用额外的数组空间
 */
-int removeDuplicates(std::vector<int>& nums)
+vector<int>& RemoveDuplicates(vector<int>& nums)
 {
-	std::vector<int>* duplicates = new std::vector<int>();
+	vector<int>* duplicates = new vector<int>();
 	for (size_t i = 0; i < nums.size(); i++)
 	{
 		int element = nums[i];
@@ -34,11 +36,5 @@ int removeDuplicates(std::vector<int>& nums)
 		}
 	}
 
-	std::cout << "Remove duplicates -> ";
-	for (size_t i = 0; i < nums.size(); i++)
-	{
-		std::cout << nums[i] << ",";
-	}
-
-	return nums.size();
+	return nums;
 }

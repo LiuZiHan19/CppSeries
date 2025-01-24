@@ -2,12 +2,14 @@
 #include <vector>
 #include <algorithm>
 
+using namespace std;
+
 /*
   轮转数组 => 暴力解法
 */
-std::vector<int>& rotatedArrary(std::vector<int>& nums, int rotatedNumber)
+vector<int>& RotatedArrary(vector<int>& nums, int rotatedNumber)
 {
-	std::vector<int> container;
+	vector<int> container;
 	for (size_t i = 0; i < rotatedNumber; i++)
 	{
 		container.clear();
@@ -40,19 +42,19 @@ std::vector<int>& rotatedArrary(std::vector<int>& nums, int rotatedNumber)
 /*
   轮转数组 => 题解
 */
-std::vector<int>& rotatedArrayMax(std::vector<int>& nums, int k)
+vector<int>& RotatedArrayMax(vector<int>& nums, int k)
 {
 	// 取余避免无效轮转
 	k %= nums.size();
 
 	// 反转整个数组
-	std::reverse(nums.begin(), nums.end());
+	reverse(nums.begin(), nums.end());
 
 	// 反转k
-	std::reverse(nums.begin(), nums.begin() + k);
+	reverse(nums.begin(), nums.begin() + k);
 
 	//反转剩余
-	std::reverse(nums.begin() + k, nums.end());
+	reverse(nums.begin() + k, nums.end());
 
 	return nums;
 }

@@ -2,77 +2,103 @@
 #include <vector>
 #include "logger.h"
 
-void merge(std::vector<int>& nums1, int m, std::vector<int>& nums2, int n);
-int removeElement(std::vector<int>& nums, int element);
-int removeDuplicates(std::vector<int>& nums);
-int removeDuplicatesNoExtraMemorySpace(std::vector<int>& nums);
-int majorityElement(std::vector<int>& nums);
-int boyerMooreAlgorithm(std::vector<int>& nums);
-std::vector<int>& rotatedArrary(std::vector<int>& nums, int rotatedNumber);
-std::vector<int>& rotatedArrayMax(std::vector<int>& nums, int k);
-int maxProfit(std::vector<int>& nums);
+using namespace std;
+
+vector<int>& Merge(vector<int>& nums1, int m, vector<int>& nums2, int n);
+vector<int>& RemoveElement(vector<int>& nums, int element);
+vector<int>& RemoveDuplicates(vector<int>& nums);
+vector<int>& RemoveDuplicatesNoExtraMemorySpace(vector<int>& nums);
+int MajorityElement(vector<int>& nums);
+int BoyerMooreAlgorithm(vector<int>& nums);
+vector<int>& RotatedArrary(vector<int>& nums, int rotatedNumber);
+vector<int>& RotatedArrayMax(vector<int>& nums, int k);
+int MaxProfit(vector<int>& nums);
 
 int main()
 {
 	{
-		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 1, 2, 3, 0, 0, 0 }));
-		std::shared_ptr<std::vector<int>> nums2 = std::make_shared<std::vector<int>>(std::vector<int>({ 2, 5, 6 }));
+		shared_ptr<vector<int>> nums1 = make_shared<vector<int>>(vector<int>({ 1, 2, 3, 0, 0, 0 }));
+		shared_ptr<vector<int>> nums2 = make_shared<vector<int>>(vector<int>({ 2, 5, 6 }));
 		int m = 3;
 		int n = 3;
-		merge(*nums1, m, *nums2, n);
-	}
-
-	{
-		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 1 }));
-		std::shared_ptr<std::vector<int>> nums2 = std::make_shared<std::vector<int>>(std::vector<int>({ 0 }));
-		int m = 1;
-		int n = 0;
-		merge(*nums1, m, *nums2, n);
-	}
-
-	{
-		NewLine();
-		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 3, 2, 2, 3 }));
-		int element = 3;
-		int size = removeElement(*nums1, element);
-		std::cout << "remove_element->" << size << std::endl;
-	}
-
-	{
-		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 3, 2, 2, 3 }));
-		removeDuplicates(*nums1);
-	}
-
-	{
-		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 1, 1, 1, 2, 2, 3 }));
-		removeDuplicatesNoExtraMemorySpace(*nums1);
-	}
-
-	{
-		NewLine();
-		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 2,2,1,1,1,2,2 }));
-		int answer1 = boyerMooreAlgorithm(*nums1);
-		std::cout << "majorityElement -> " << answer1 << std::endl;
-		std::shared_ptr<std::vector<int>> nums2 = std::make_shared<std::vector<int>>(std::vector<int>({ 3,2,3 }));
-		int answer2 = boyerMooreAlgorithm(*nums2);
-		std::cout << "majorityElement ->" << answer2;
-	}
-
-	{
-		NewLine();
-		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 1, 2, 3, 4, 5 }));
-		std::vector<int>& numsRef = rotatedArrayMax(*nums1, 3);
-		for (size_t i = 0; i < numsRef.size(); i++)
+		vector<int>& answer = Merge(*nums1, m, *nums2, n);
+		cout << "Merge: ";
+		for (size_t i = 0; i < answer.size(); i++)
 		{
-			std::cout << numsRef[i] << ",";
+			cout << answer[i];
+			if (i != answer.size() - 1)
+				cout << ",";
 		}
 	}
 
 	{
-		NewLine();
-		std::shared_ptr<std::vector<int>> nums1 = std::make_shared<std::vector<int>>(std::vector<int>({ 7, 1, 5, 3, 6, 4 }));
-		std::shared_ptr<std::vector<int>> nums2 = std::make_shared<std::vector<int>>(std::vector<int>({ 7, 6, 4, 3,1 }));
-		maxProfit(*nums1);
+		Line();
+		shared_ptr<vector<int>> nums1 = make_shared<vector<int>>(vector<int>({ 3, 2, 2, 3 }));
+		int element = 3;
+		vector<int>& answer = RemoveElement(*nums1, element);
+		cout << "RemoveElement: ";
+		for (size_t i = 0; i < answer.size(); i++)
+		{
+			cout << answer[i];
+			if (i != answer.size() - 1)
+				cout << ",";
+		}
+	}
+
+	{
+		Line();
+		shared_ptr<vector<int>> nums1 = make_shared<vector<int>>(vector<int>({ 3, 2, 2, 3 }));
+		vector<int>& answer = RemoveDuplicates(*nums1);
+		cout << "RemoveDuplicates: ";
+		for (size_t i = 0; i < answer.size(); i++)
+		{
+			cout << answer[i];
+			if (i != answer.size() - 1)
+				cout << ",";
+		}
+	}
+
+	{
+		Line();
+		shared_ptr<vector<int>> nums1 = make_shared<vector<int>>(vector<int>({ 1, 1, 1, 2, 2, 3 }));
+		vector<int>& answer = RemoveDuplicatesNoExtraMemorySpace(*nums1);
+		cout << "RemoveDuplicatesNoExtraMemorySpace: ";
+		for (size_t i = 0; i < answer.size(); i++)
+		{
+			cout << answer[i];
+			if (i != answer.size() - 1)
+				cout << ",";
+		}
+	}
+
+	{
+		Line();
+		shared_ptr<vector<int>> nums1 = make_shared<vector<int>>(vector<int>({ 2,2,1,1,1,2,2 }));
+		int answer1 = BoyerMooreAlgorithm(*nums1);
+		cout << "BoyerMooreAlgorithm: " << answer1 << endl;
+		shared_ptr<vector<int>> nums2 = make_shared<vector<int>>(vector<int>({ 3,2,3 }));
+		int answer2 = BoyerMooreAlgorithm(*nums2);
+		cout << "BoyerMooreAlgorithm: " << answer2;
+	}
+
+	{
+		Line();
+		shared_ptr<vector<int>> nums1 = make_shared<vector<int>>(vector<int>({ 1, 2, 3, 4, 5 }));
+		vector<int>& answer = RotatedArrayMax(*nums1, 3);
+		cout << "RotatedArrayMax: ";
+		for (size_t i = 0; i < answer.size(); i++)
+		{
+			cout << answer[i];
+			if (i != answer.size() - 1)
+				cout << ",";
+		}
+	}
+
+	{
+		Line();
+		shared_ptr<vector<int>> nums1 = make_shared<vector<int>>(vector<int>({ 7, 1, 5, 3, 6, 4 }));
+		shared_ptr<vector<int>> nums2 = make_shared<vector<int>>(vector<int>({ 7, 6, 4, 3,1 }));
+		MaxProfit(*nums1);
 	}
 
 	return 0;

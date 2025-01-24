@@ -1,10 +1,12 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 /*
   合并有序数组
 */
-void merge(std::vector<int>& nums1, int m, std::vector<int>& nums2, int n)
+vector<int>& Merge(vector<int>& nums1, int m, vector<int>& nums2, int n)
 {
 	int size = m + n;
 	int startIndex = size - 1;
@@ -29,10 +31,5 @@ void merge(std::vector<int>& nums1, int m, std::vector<int>& nums2, int n)
 		}
 	}
 
-	std::cout << std::endl;
-	std::cout << "Merge -> ";
-	for (size_t i = 0; i < nums1.size(); i++)
-	{
-		std::cout << nums1[i] << ",";
-	}
+	return nums1;
 }

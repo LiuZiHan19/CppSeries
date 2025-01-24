@@ -1,10 +1,12 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 /*
   ÒÆ³ýÖ¸¶¨ÔªËØ
 */
-int removeElement(std::vector<int>& nums, int element)
+vector<int>& RemoveElement(vector<int>& nums, int element)
 {
 	for (size_t i = 0; i < nums.size(); i++)
 	{
@@ -15,5 +17,5 @@ int removeElement(std::vector<int>& nums, int element)
 		}
 	}
 
-	return nums.size();
+	return nums;
 }

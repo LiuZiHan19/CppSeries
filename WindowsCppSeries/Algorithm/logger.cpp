@@ -1,22 +1,24 @@
 #include <iostream>
 #include "Logger.h"
 
-void NewLine()
+using namespace std;
+
+void Line()
 {
-	std::cout << std::endl;
+	cout << endl;
 }
 
 void Log(const char* message)
 {
-	std::cout << "[Log]:" << message << std::endl;
+	cout << "[Log]:" << message << endl;
 }
 
 void Warning(const char* message)
 {
-	std::cout << "[Warning]:" << message << std::endl;
+	cout << "[Warning]:" << message << endl;
 }
 
 void Error(const char* message)
 {
-	std::cout << "[Error]:" << message << std::endl;
+	cout << "[Error]:" << message << endl;
 }

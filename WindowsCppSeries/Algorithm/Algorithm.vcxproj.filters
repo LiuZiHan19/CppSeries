@@ -27,32 +27,38 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="remove_element.cpp">
+    <ClCompile Include="RemoveElements.cpp">
       <Filter>Source Files\Simple</Filter>
     </ClCompile>
-    <ClCompile Include="merge_sorted_array.cpp">
+    <ClCompile Include="MergeSortedArrary.cpp">
       <Filter>Source Files\Simple</Filter>
     </ClCompile>
-    <ClCompile Include="remove_duplicates.cpp">
+    <ClCompile Include="RemoveDuplicates.cpp">
       <Filter>Source Files\Simple</Filter>
     </ClCompile>
-    <ClCompile Include="remove_duplicate_medium.cpp">
+    <ClCompile Include="RemoveDuplicateMedium.cpp">
       <Filter>Source Files\Medium</Filter>
     </ClCompile>
-    <ClCompile Include="majority_element.cpp">
+    <ClCompile Include="MajorityElement.cpp">
       <Filter>Source Files\Simple</Filter>
     </ClCompile>
-    <ClCompile Include="rotated_array.cpp">
+    <ClCompile Include="RotatedArrary.cpp">
       <Filter>Source Files\Medium</Filter>
     </ClCompile>
-    <ClCompile Include="logger.cpp">
+    <ClCompile Include="Logger.cpp">
       <Filter>Source Files\Log</Filter>
     </ClCompile>
-    <ClCompile Include="max_profit.cpp">
+    <ClCompile Include="MaxProfit.cpp">
       <Filter>Source Files\Simple</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxProfitMedium.cpp">
+      <Filter>Source Files\Medium</Filter>
+    </ClCompile>
+    <ClCompile Include="JumpGame.cpp">
+      <Filter>Source Files\Medium</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

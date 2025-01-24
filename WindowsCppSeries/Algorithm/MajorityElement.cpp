@@ -1,10 +1,12 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 /*
   找出数量最多的元素
 */
-int majorityElement(std::vector<int>& nums)
+int MajorityElement(vector<int>& nums)
 {
 	int numsHalfSize = nums.size() / 2;
 	for (size_t i = 0; i < nums.size(); i++)
@@ -30,7 +32,7 @@ int majorityElement(std::vector<int>& nums)
 /*
   找出数量最多的元素 => 投票算法
 */
-int boyerMooreAlgorithm(std::vector<int>& nums)
+int BoyerMooreAlgorithm(vector<int>& nums)
 {
 	int candidate = nums[0];
 	int count = 1;
