@@ -14,7 +14,7 @@ vector<int>& RotatedArrary(vector<int>& nums, int rotatedNumber);
 vector<int>& RotatedArrayMax(vector<int>& nums, int k);
 int MaxProfit(vector<int>& nums);
 
-int main()
+int Main()
 {
 	{
 		shared_ptr<vector<int>> nums1 = make_shared<vector<int>>(vector<int>({ 1, 2, 3, 0, 0, 0 }));
